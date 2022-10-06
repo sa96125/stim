@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		864C9D1D28ED774C004EEAF1 /* stimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864C9D1C28ED774C004EEAF1 /* stimApp.swift */; };
+		864C9D1F28ED774C004EEAF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864C9D1E28ED774C004EEAF1 /* ContentView.swift */; };
+		864C9D2128ED7750004EEAF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864C9D2028ED7750004EEAF1 /* Assets.xcassets */; };
+		864C9D2428ED7750004EEAF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864C9D2328ED7750004EEAF1 /* Preview Assets.xcassets */; };
+		864C9D3328ED7751004EEAF1 /* stimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864C9D3228ED7751004EEAF1 /* stimTests.swift */; };
+		864C9D3D28ED7751004EEAF1 /* stimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864C9D3C28ED7751004EEAF1 /* stimUITests.swift */; };
+		864C9D3F28ED7751004EEAF1 /* stimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864C9D3E28ED7751004EEAF1 /* stimUITestsLaunchTests.swift */; };
+		864C9D5228ED832F004EEAF1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864C9D5128ED832F004EEAF1 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		864C9D2F28ED7751004EEAF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 864C9D1128ED774C004EEAF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 864C9D1828ED774C004EEAF1;
+			remoteInfo = stim;
+		};
+		864C9D3928ED7751004EEAF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 864C9D1128ED774C004EEAF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 864C9D1828ED774C004EEAF1;
+			remoteInfo = stim;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		864C9D1928ED774C004EEAF1 /* stim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		864C9D1C28ED774C004EEAF1 /* stimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stimApp.swift; sourceTree = "<group>"; };
+		864C9D1E28ED774C004EEAF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		864C9D2028ED7750004EEAF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		864C9D2328ED7750004EEAF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		864C9D2E28ED7751004EEAF1 /* stimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		864C9D3228ED7751004EEAF1 /* stimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stimTests.swift; sourceTree = "<group>"; };
+		864C9D3828ED7751004EEAF1 /* stimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		864C9D3C28ED7751004EEAF1 /* stimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stimUITests.swift; sourceTree = "<group>"; };
+		864C9D3E28ED7751004EEAF1 /* stimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stimUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		864C9D5128ED832F004EEAF1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		864C9D5828EDADF8004EEAF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		864C9D1628ED774C004EEAF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		864C9D2B28ED7751004EEAF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		864C9D3528ED7751004EEAF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		864C9D1028ED774C004EEAF1 = {
+			isa = PBXGroup;
+			children = (
+				864C9D1B28ED774C004EEAF1 /* stim */,
+				864C9D3128ED7751004EEAF1 /* stimTests */,
+				864C9D3B28ED7751004EEAF1 /* stimUITests */,
+				864C9D1A28ED774C004EEAF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		864C9D1A28ED774C004EEAF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				864C9D1928ED774C004EEAF1 /* stim.app */,
+				864C9D2E28ED7751004EEAF1 /* stimTests.xctest */,
+				864C9D3828ED7751004EEAF1 /* stimUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		864C9D1B28ED774C004EEAF1 /* stim */ = {
+			isa = PBXGroup;
+			children = (
+				864C9D4B28ED7F65004EEAF1 /* Model */,
+				864C9D5728EDA125004EEAF1 /* View */,
+				864C9D4E28ED8192004EEAF1 /* Service */,
+				86F8B06928EF119000816890 /* Extension */,
+				864C9D1C28ED774C004EEAF1 /* stimApp.swift */,
+				864C9D1E28ED774C004EEAF1 /* ContentView.swift */,
+				864C9D5128ED832F004EEAF1 /* Constants.swift */,
+				864C9D2028ED7750004EEAF1 /* Assets.xcassets */,
+				864C9D5828EDADF8004EEAF1 /* Info.plist */,
+				864C9D2228ED7750004EEAF1 /* Preview Content */,
+			);
+			path = stim;
+			sourceTree = "<group>";
+		};
+		864C9D2228ED7750004EEAF1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				864C9D2328ED7750004EEAF1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		864C9D3128ED7751004EEAF1 /* stimTests */ = {
+			isa = PBXGroup;
+			children = (
+				864C9D3228ED7751004EEAF1 /* stimTests.swift */,
+			);
+			path = stimTests;
+			sourceTree = "<group>";
+		};
+		864C9D3B28ED7751004EEAF1 /* stimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				864C9D3C28ED7751004EEAF1 /* stimUITests.swift */,
+				864C9D3E28ED7751004EEAF1 /* stimUITestsLaunchTests.swift */,
+			);
+			path = stimUITests;
+			sourceTree = "<group>";
+		};
+		864C9D4B28ED7F65004EEAF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		864C9D4E28ED8192004EEAF1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		864C9D5728EDA125004EEAF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86F8B06A28EF123E00816890 /* Components */,
+				86F8B06C28EF12A200816890 /* Login */,
+				86F8B06B28EF12A000816890 /* Play */,
+				86F8B06F28EF12E600816890 /* Search */,
+				86F8B06E28EF12E300816890 /* Notification */,
+				86F8B06D28EF12E000816890 /* Feed */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86F8B06928EF119000816890 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		86F8B06A28EF123E00816890 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		86F8B06B28EF12A000816890 /* Play */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		86F8B06C28EF12A200816890 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		86F8B06D28EF12E000816890 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		86F8B06E28EF12E300816890 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		86F8B06F28EF12E600816890 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		864C9D1828ED774C004EEAF1 /* stim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 864C9D4228ED7751004EEAF1 /* Build configuration list for PBXNativeTarget "stim" */;
+			buildPhases = (
+				864C9D1528ED774C004EEAF1 /* Sources */,
+				864C9D1628ED774C004EEAF1 /* Frameworks */,
+				864C9D1728ED774C004EEAF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = stim;
+			productName = stim;
+			productReference = 864C9D1928ED774C004EEAF1 /* stim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		864C9D2D28ED7751004EEAF1 /* stimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 864C9D4528ED7751004EEAF1 /* Build configuration list for PBXNativeTarget "stimTests" */;
+			buildPhases = (
+				864C9D2A28ED7751004EEAF1 /* Sources */,
+				864C9D2B28ED7751004EEAF1 /* Frameworks */,
+				864C9D2C28ED7751004EEAF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				864C9D3028ED7751004EEAF1 /* PBXTargetDependency */,
+			);
+			name = stimTests;
+			productName = stimTests;
+			productReference = 864C9D2E28ED7751004EEAF1 /* stimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		864C9D3728ED7751004EEAF1 /* stimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 864C9D4828ED7751004EEAF1 /* Build configuration list for PBXNativeTarget "stimUITests" */;
+			buildPhases = (
+				864C9D3428ED7751004EEAF1 /* Sources */,
+				864C9D3528ED7751004EEAF1 /* Frameworks */,
+				864C9D3628ED7751004EEAF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				864C9D3A28ED7751004EEAF1 /* PBXTargetDependency */,
+			);
+			name = stimUITests;
+			productName = stimUITests;
+			productReference = 864C9D3828ED7751004EEAF1 /* stimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		864C9D1128ED774C004EEAF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					864C9D1828ED774C004EEAF1 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					864C9D2D28ED7751004EEAF1 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 864C9D1828ED774C004EEAF1;
+					};
+					864C9D3728ED7751004EEAF1 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 864C9D1828ED774C004EEAF1;
+					};
+				};
+			};
+			buildConfigurationList = 864C9D1428ED774C004EEAF1 /* Build configuration list for PBXProject "stim" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 864C9D1028ED774C004EEAF1;
+			productRefGroup = 864C9D1A28ED774C004EEAF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				864C9D1828ED774C004EEAF1 /* stim */,
+				864C9D2D28ED7751004EEAF1 /* stimTests */,
+				864C9D3728ED7751004EEAF1 /* stimUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		864C9D1728ED774C004EEAF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864C9D2428ED7750004EEAF1 /* Preview Assets.xcassets in Resources */,
+				864C9D2128ED7750004EEAF1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		864C9D2C28ED7751004EEAF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		864C9D3628ED7751004EEAF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		864C9D1528ED774C004EEAF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864C9D1F28ED774C004EEAF1 /* ContentView.swift in Sources */,
+				864C9D5228ED832F004EEAF1 /* Constants.swift in Sources */,
+				864C9D1D28ED774C004EEAF1 /* stimApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		864C9D2A28ED7751004EEAF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864C9D3328ED7751004EEAF1 /* stimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		864C9D3428ED7751004EEAF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864C9D3D28ED7751004EEAF1 /* stimUITests.swift in Sources */,
+				864C9D3F28ED7751004EEAF1 /* stimUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		864C9D3028ED7751004EEAF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 864C9D1828ED774C004EEAF1 /* stim */;
+			targetProxy = 864C9D2F28ED7751004EEAF1 /* PBXContainerItemProxy */;
+		};
+		864C9D3A28ED7751004EEAF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 864C9D1828ED774C004EEAF1 /* stim */;
+			targetProxy = 864C9D3928ED7751004EEAF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		864C9D4028ED7751004EEAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		864C9D4128ED7751004EEAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		864C9D4328ED7751004EEAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"stim/Preview Content\"";
+				DEVELOPMENT_TEAM = QK9K24Z9V2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = stim/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sa96125.stim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		864C9D4428ED7751004EEAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"stim/Preview Content\"";
+				DEVELOPMENT_TEAM = QK9K24Z9V2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = stim/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sa96125.stim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		864C9D4628ED7751004EEAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QK9K24Z9V2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sa96125.stimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stim.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/stim";
+			};
+			name = Debug;
+		};
+		864C9D4728ED7751004EEAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QK9K24Z9V2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sa96125.stimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stim.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/stim";
+			};
+			name = Release;
+		};
+		864C9D4928ED7751004EEAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QK9K24Z9V2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sa96125.stimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = stim;
+			};
+			name = Debug;
+		};
+		864C9D4A28ED7751004EEAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QK9K24Z9V2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sa96125.stimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = stim;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		864C9D1428ED774C004EEAF1 /* Build configuration list for PBXProject "stim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				864C9D4028ED7751004EEAF1 /* Debug */,
+				864C9D4128ED7751004EEAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		864C9D4228ED7751004EEAF1 /* Build configuration list for PBXNativeTarget "stim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				864C9D4328ED7751004EEAF1 /* Debug */,
+				864C9D4428ED7751004EEAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		864C9D4528ED7751004EEAF1 /* Build configuration list for PBXNativeTarget "stimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				864C9D4628ED7751004EEAF1 /* Debug */,
+				864C9D4728ED7751004EEAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		864C9D4828ED7751004EEAF1 /* Build configuration list for PBXNativeTarget "stimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				864C9D4928ED7751004EEAF1 /* Debug */,
+				864C9D4A28ED7751004EEAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 864C9D1128ED774C004EEAF1 /* Project object */;
+}
