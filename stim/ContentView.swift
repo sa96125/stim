@@ -11,9 +11,27 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
+        ZStack(alignment: .topLeading) {
+            MainTabView()
+        }
         
-        Text("Hello world")
-        
+
+        .navigationTitle("Navigation")
+        .toolbar {
+            ToolbarItem {
+                Button {
+                    
+                } label: {
+                    HStack(spacing:16) {
+                        Image(systemName: "square.and.pencil")
+                            .foregroundColor(.black)
+                        Image(systemName: "paperplane")
+                            .foregroundColor(.black)
+                    }
+                    
+                }
+            }
+        }
     }
 
 }
