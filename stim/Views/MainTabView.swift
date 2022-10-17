@@ -7,95 +7,82 @@
 
 import SwiftUI
 
-enum Tab {
-    case play
-    case explore
-    case notifications
-    case feed
-    case mypage
-}
-
 struct MainTabView: View {
     
-    @State private var selectedTab: Tab = .play
-    
+    @ObservedObject var mainTabViewModel = MainTabViewModel()
     
     var body: some View {
-        
-        TabView(selection: self.$selectedTab) {
+        TabView(selection: self.$mainTabViewModel.selectedTab) {
             
             PlayView()
                 .onTapGesture {
-                    self.selectedTab = .play
+                    self.mainTabViewModel.selectedTab = .play
                 }
                 .tabItem {
                     VStack {
                         Image(systemName: "play")
+                        .font(.subheadline)
                         Text("플레이")
                     }
                 }
-                .tag(Tab.play)
-            
-            
-            ExploreView()
-                .onTapGesture {
-                    self.selectedTab = .explore
-                }
-                .tabItem {
-                    VStack {
-                        Image(systemName: "magnifyingglass")
-                        Text("검색")
-                    }
-                }
-                .tag(Tab.explore)
+                .tag(Tabs.play)
             
             
             FeedView()
                 .onTapGesture {
-                    self.selectedTab = .feed
+                    self.mainTabViewModel.selectedTab = .feed
                 }
                 .tabItem {
                     VStack {
                         Image(systemName: "square.grid.2x2")
+                        .font(.subheadline)
                         Text("커뮤니티")
                     }
                 }
-                .tag(Tab.feed)
+                .tag(Tabs.feed)
+            
+            
+            ExploreView()
+                .onTapGesture {
+                    self.mainTabViewModel.selectedTab = .explore
+                }
+                .tabItem {
+                    VStack {
+                        Image(systemName: "magnifyingglass")
+                        .font(.subheadline)
+                        Text("검색")
+                    }
+                }
+                .tag(Tabs.explore)
             
             
             NotificationsView()
                 .onTapGesture {
-                    self.selectedTab = .feed
+                    self.mainTabViewModel.selectedTab = .feed
                 }
                 .tabItem {
                     VStack {
                         Image(systemName: "bell")
+                        .font(.subheadline)
                         Text("알림")
                     }
                 }
-                .tag(Tab.notifications)
+                .tag(Tabs.notifications)
             
             
-            MypageView()
+            MyPageView()
                 .onTapGesture {
-                    self.selectedTab = .mypage
+                    self.mainTabViewModel.selectedTab = .mypage
                 }
                 .tabItem {
                     VStack {
                         Image(systemName: "person.crop.circle.fill")
-                        Text("마이페이지")
+                        .font(.subheadline)
+                        Text("내 정보")
                     }
                 }
-                .tag(Tab.mypage)
-
-    
-        }
-        .accentColor(.black)
-    }
-}
-
-struct MainTabView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainTabView()
+                .tag(Tabs.mypage)
+            
+        }.accentColor(.black)
     }
 }
