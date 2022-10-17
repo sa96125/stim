@@ -10,36 +10,15 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @EnvironmentObject var authViewModel: AuthViewModel
+    
     var body: some View {
-        ZStack(alignment: .topLeading) {
-            MainTabView()
-        }
-        
-
-        .navigationTitle("Navigation")
-        .toolbar {
-            ToolbarItem {
-                Button {
-                    
-                } label: {
-                    HStack(spacing:16) {
-                        Image(systemName: "square.and.pencil")
-                            .foregroundColor(.black)
-                        Image(systemName: "paperplane")
-                            .foregroundColor(.black)
-                    }
-                    
-                }
+        Group {
+            if authViewModel.userSession == nil {
+                RegisterView()
+            } else {
+                MainTabView()
             }
         }
-    }
-
-}
-
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
