@@ -1,45 +1,40 @@
-usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
-           <command> [<args>]
 
-These are common Git commands used in various situations:
+# Stim
+스팀은 열기, 자극이라는 의미로 개인 운동에 활기를 넣어주는 어플리케이션을 개발하자는 취지와 어울려 이름짓게 되었습니다. 시중에 PT상품은 높은 가격으로 형성되어 있습니다. 아무래도 가격이 큰 걸림돌인 것은 사실입니다. 또한 혼자 운동하는데 효율이 나지 않아 고민인 사람도 많이 있다는 것을 알게 되었습니다. 스팀은 이러한 문제를 해결할 수 있을 것입니다. 혼자 운동하더라도 PT받는 것처럼 열정적으로 운동할 수 있는 특별한 서비스, 운동인을 위한 건강한 커뮤니티를 만드는 것을 목표로하고 있습니다.  
+<br/><br/>
 
-start a working area (see also: git help tutorial)
-   clone     Clone a repository into a new directory
-   init      Create an empty Git repository or reinitialize an existing one
 
-work on the current change (see also: git help everyday)
-   add       Add file contents to the index
-   mv        Move or rename a file, a directory, or a symlink
-   restore   Restore working tree files
-   rm        Remove files from the working tree and from the index
+## 활용기술
+SwiftUI, MVVM, Firebase
+<br/><br/>
 
-examine the history and state (see also: git help revisions)
-   bisect    Use binary search to find the commit that introduced a bug
-   diff      Show changes between commits, commit and working tree, etc
-   grep      Print lines matching a pattern
-   log       Show commit logs
-   show      Show various types of objects
-   status    Show the working tree status
 
-grow, mark and tweak your common history
-   branch    List, create, or delete branches
-   commit    Record changes to the repository
-   merge     Join two or more development histories together
-   rebase    Reapply commits on top of another base tip
-   reset     Reset current HEAD to the specified state
-   switch    Switch branches
-   tag       Create, list, delete or verify a tag object signed with GPG
+## 초기화면
+일반적인 회원가입처럼 여러 사용자 정보를 기입하는 방식이 아니라, 모바일 전용앱인 만큼 휴대폰이 인증 후 이메일 패스워드를 입력하도록하였습니다. 최소한의 정보만 입력함으로서 최대한 간편하면서 익숙한 사용자 경험을 제공하는 것에 초점을 두었습니다. 
+<br/><br/>
 
-collaborate (see also: git help workflows)
-   fetch     Download objects and refs from another repository
-   pull      Fetch from and integrate with another repository or a local branch
-   push      Update remote refs along with associated objects
 
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
+![title](stim-signup.gif)
+<br/><br/>
+
+
+### Implements & Learn
+- FirebaseStore CRUD
+- Dependency Injection
+- Transition
+- Custom Modifires
+- Error Control
+- Extensions
+- SwiftUI property wrappers
+   - @EnvironmentObject
+   - @ObservedObject
+   - @FocusState
+   - @State
+   - @Published
+   - @Binding
+<br/>
+
+
+### Why Firebase?
+이전에 사용한 svelteKit으로 node server를 구축할까도 생각했지만 기획, 디자인, 개발 전반적으로 모든 부분을 커버해야해서 백엔드 개발에 시간과 리소스를 줄여야겠다고 판단했습니다. 파이어베이스는 쉽고 빠르게 프로토타입을 개발하면서 실제 런칭에서도 안정적으로 확장할 수 있는 방법이었고 여러 대체자원들 중에 나에게 가장 읽기 편한 문서를 가져 선택하게 되었습니다.
+<br/><br/>
