@@ -31,6 +31,7 @@ enum RegisterStep: Int, CaseIterable  {
         }
     }
 }
+
 enum RegisterError: Error, LocalizedError {
     case mobileEmpty
     case mobileInvalid
