@@ -1,0 +1,4 @@
+rootProject.name = 'stim'
+include 'user-service'
+include 'user-service'
+
