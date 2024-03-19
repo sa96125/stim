@@ -1,23 +1,21 @@
-package com.sa96125.user.service;
+package com.sa96125.user.application.service;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Value;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-@Value
 @Getter
+@Setter
 @Builder(toBuilder = true)
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
     UUID id;
- //   OAuthProvider oAuthProvider;
     String email;
     String password;
     String role;
-    // activate,
     String status;
     String name;
     String nickName;
