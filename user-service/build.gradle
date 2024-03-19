@@ -24,9 +24,14 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.jetbrains:annotations:23.0.0'
-    implementation 'org.mapstruct:mapstruct:1.4.2.Final'
-    implementation 'org.projectlombok:lombok:1.18.20'
-    annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
+
+    implementation 'org.mapstruct:mapstruct:1.4.2.Final' // MapStruct 의존성 추가
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final' // MapStruct 프로세서 의존성 추가
+
+    annotationProcessor 'org.projectlombok:lombok'
+    compileOnly 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+    testCompileOnly 'org.projectlombok:lombok'
 }
 
 test {
