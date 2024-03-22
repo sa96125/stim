@@ -1,11 +1,9 @@
-import {
-  Link,
-  Outlet,
-  createRootRouteWithContext,
-} from "@tanstack/react-router"
+import React, { Fragment } from "react"
 import { Auth } from "@/utils/auth"
-import { Fragment } from "react/jsx-runtime"
+import { Outlet, createRootRouteWithContext } from "@tanstack/react-router"
 import { TanStackRouterDevtools } from "@tanstack/router-devtools"
+import NavigationBar from "@/components/molecules/navigation-bar"
+import { useMediaQuery } from "usehooks-ts"
 
 export const Route = createRootRouteWithContext<{ auth: Auth }>()({
   component: RootComponent,
@@ -20,29 +18,20 @@ const pages = [
 ]
 
 function RootComponent() {
+  const isMobile = useMediaQuery("(max-width: 768px)")
+
+  if (!isMobile) {
+    return (
+      <div className=" w-full h-screen flex flex-col items-center justify-center">
+        <p className=" bg-amber-300">Unsupported device.</p>
+        <p className=" font-thin">Please access from a mobile device.</p>
+      </div>
+    )
+  }
+
   return (
     <>
-      <nav>
-        {pages.map((page) => (
-          <Fragment key={page.label}>
-            <Link
-              to={page.path}
-              preload="intent"
-              className={`block py-2 px-3 text-blue-700`}
-              activeProps={{ className: `font-bold` }}
-              activeOptions={
-                {
-                  // If the route points to the root of it's parent,
-                  // make sure it's only active if it's exact
-                  // exact: to === '.',
-                }
-              }
-            >
-              {page.label}
-            </Link>
-          </Fragment>
-        ))}
-      </nav>
+      <NavigationBar />
       <div>
         {/* Render our first route match */}
         <Outlet />

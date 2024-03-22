@@ -14,8 +14,10 @@ import { Route as rootRoute } from './routes/__root'
 import { Route as SettingsImport } from './routes/settings'
 import { Route as SearchImport } from './routes/search'
 import { Route as NotificationsImport } from './routes/notifications'
-import { Route as CommunityImport } from './routes/community'
 import { Route as IndexImport } from './routes/index'
+import { Route as PostsIndexImport } from './routes/posts.index'
+import { Route as PostsRegisterImport } from './routes/posts.register'
+import { Route as PostsPostIdImport } from './routes/posts.$postId'
 import { Route as authSendMobileCodeImport } from './routes/(auth)/send-mobile-code'
 import { Route as authLoginImport } from './routes/(auth)/login'
 
@@ -36,13 +38,23 @@ const NotificationsRoute = NotificationsImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const CommunityRoute = CommunityImport.update({
-  path: '/community',
+const IndexRoute = IndexImport.update({
+  path: '/',
   getParentRoute: () => rootRoute,
 } as any)
 
-const IndexRoute = IndexImport.update({
-  path: '/',
+const PostsIndexRoute = PostsIndexImport.update({
+  path: '/posts/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const PostsRegisterRoute = PostsRegisterImport.update({
+  path: '/posts/register',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const PostsPostIdRoute = PostsPostIdImport.update({
+  path: '/posts/$postId',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -62,10 +74,6 @@ declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
     '/': {
       preLoaderRoute: typeof IndexImport
-      parentRoute: typeof rootRoute
-    }
-    '/community': {
-      preLoaderRoute: typeof CommunityImport
       parentRoute: typeof rootRoute
     }
     '/notifications': {
@@ -88,6 +96,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof authSendMobileCodeImport
       parentRoute: typeof rootRoute
     }
+    '/posts/$postId': {
+      preLoaderRoute: typeof PostsPostIdImport
+      parentRoute: typeof rootRoute
+    }
+    '/posts/register': {
+      preLoaderRoute: typeof PostsRegisterImport
+      parentRoute: typeof rootRoute
+    }
+    '/posts/': {
+      preLoaderRoute: typeof PostsIndexImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -95,12 +115,14 @@ declare module '@tanstack/react-router' {
 
 export const routeTree = rootRoute.addChildren([
   IndexRoute,
-  CommunityRoute,
   NotificationsRoute,
   SearchRoute,
   SettingsRoute,
   authLoginRoute,
   authSendMobileCodeRoute,
+  PostsPostIdRoute,
+  PostsRegisterRoute,
+  PostsIndexRoute,
 ])
 
 /* prettier-ignore-end */
