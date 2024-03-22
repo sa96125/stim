@@ -1,41 +1,30 @@
-import React, { Fragment } from "react"
-import { Auth } from "@/utils/auth"
-import { Outlet, createRootRouteWithContext } from "@tanstack/react-router"
-import { TanStackRouterDevtools } from "@tanstack/router-devtools"
-import NavigationBar from "@/components/molecules/navigation-bar"
+import * as React from "react"
+
+import { Auth, auth } from "@/utils/auth"
 import { useMediaQuery } from "usehooks-ts"
+import { Redirect, useRouter } from "@tanstack/react-router"
+import { TanStackRouterDevtools } from "@tanstack/router-devtools"
+import { Outlet, createRootRouteWithContext } from "@tanstack/react-router"
+
+import NavigationBar from "@/components/molecules/NavigationBar"
+import UnsupportedDevice from "@/components/templates/UnsupportedDevice"
 
 export const Route = createRootRouteWithContext<{ auth: Auth }>()({
   component: RootComponent,
 })
 
-const pages = [
-  { path: "/", label: "Home" },
-  { path: "/community", label: "Community" },
-  { path: "/search", label: "Search" },
-  { path: "/notifications", label: "Notifications" },
-  { path: "/settings", label: "Settings" },
-]
-
 function RootComponent() {
+  const router = useRouter()
   const isMobile = useMediaQuery("(max-width: 768px)")
 
   if (!isMobile) {
-    return (
-      <div className=" w-full h-screen flex flex-col items-center justify-center">
-        <p className=" bg-amber-300">Unsupported device.</p>
-        <p className=" font-thin">Please access from a mobile device.</p>
-      </div>
-    )
+    return <UnsupportedDevice />
   }
 
   return (
     <>
+      <Outlet />
       <NavigationBar />
-      <div>
-        {/* Render our first route match */}
-        <Outlet />
-      </div>
       <TanStackRouterDevtools position="bottom-left" />
     </>
   )

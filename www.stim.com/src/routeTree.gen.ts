@@ -11,55 +11,40 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as SettingsImport } from './routes/settings'
-import { Route as SearchImport } from './routes/search'
-import { Route as NotificationsImport } from './routes/notifications'
-import { Route as IndexImport } from './routes/index'
-import { Route as PostsIndexImport } from './routes/posts.index'
-import { Route as PostsRegisterImport } from './routes/posts.register'
-import { Route as PostsPostIdImport } from './routes/posts.$postId'
-import { Route as authSendMobileCodeImport } from './routes/(auth)/send-mobile-code'
+import { Route as protectedIndexImport } from './routes/(protected)/index'
+import { Route as protectedSettingsImport } from './routes/(protected)/settings'
+import { Route as protectedSearchImport } from './routes/(protected)/search'
+import { Route as protectedNotificationsImport } from './routes/(protected)/notifications'
+import { Route as authVerifyMobileImport } from './routes/(auth)/verify-mobile'
 import { Route as authLoginImport } from './routes/(auth)/login'
+import { Route as protectedPostsIndexImport } from './routes/(protected)/posts.index'
+import { Route as protectedPostsRegisterImport } from './routes/(protected)/posts.register'
+import { Route as protectedPostsPostIdImport } from './routes/(protected)/posts.$postId'
 
 // Create/Update Routes
 
-const SettingsRoute = SettingsImport.update({
-  path: '/settings',
-  getParentRoute: () => rootRoute,
-} as any)
-
-const SearchRoute = SearchImport.update({
-  path: '/search',
-  getParentRoute: () => rootRoute,
-} as any)
-
-const NotificationsRoute = NotificationsImport.update({
-  path: '/notifications',
-  getParentRoute: () => rootRoute,
-} as any)
-
-const IndexRoute = IndexImport.update({
+const protectedIndexRoute = protectedIndexImport.update({
   path: '/',
   getParentRoute: () => rootRoute,
 } as any)
 
-const PostsIndexRoute = PostsIndexImport.update({
-  path: '/posts/',
+const protectedSettingsRoute = protectedSettingsImport.update({
+  path: '/settings',
   getParentRoute: () => rootRoute,
 } as any)
 
-const PostsRegisterRoute = PostsRegisterImport.update({
-  path: '/posts/register',
+const protectedSearchRoute = protectedSearchImport.update({
+  path: '/search',
   getParentRoute: () => rootRoute,
 } as any)
 
-const PostsPostIdRoute = PostsPostIdImport.update({
-  path: '/posts/$postId',
+const protectedNotificationsRoute = protectedNotificationsImport.update({
+  path: '/notifications',
   getParentRoute: () => rootRoute,
 } as any)
 
-const authSendMobileCodeRoute = authSendMobileCodeImport.update({
-  path: '/send-mobile-code',
+const authVerifyMobileRoute = authVerifyMobileImport.update({
+  path: '/verify-mobile',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -68,44 +53,59 @@ const authLoginRoute = authLoginImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
+const protectedPostsIndexRoute = protectedPostsIndexImport.update({
+  path: '/posts/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const protectedPostsRegisterRoute = protectedPostsRegisterImport.update({
+  path: '/posts/register',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const protectedPostsPostIdRoute = protectedPostsPostIdImport.update({
+  path: '/posts/$postId',
+  getParentRoute: () => rootRoute,
+} as any)
+
 // Populate the FileRoutesByPath interface
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/': {
-      preLoaderRoute: typeof IndexImport
-      parentRoute: typeof rootRoute
-    }
-    '/notifications': {
-      preLoaderRoute: typeof NotificationsImport
-      parentRoute: typeof rootRoute
-    }
-    '/search': {
-      preLoaderRoute: typeof SearchImport
-      parentRoute: typeof rootRoute
-    }
-    '/settings': {
-      preLoaderRoute: typeof SettingsImport
-      parentRoute: typeof rootRoute
-    }
     '/(auth)/login': {
       preLoaderRoute: typeof authLoginImport
       parentRoute: typeof rootRoute
     }
-    '/(auth)/send-mobile-code': {
-      preLoaderRoute: typeof authSendMobileCodeImport
+    '/(auth)/verify-mobile': {
+      preLoaderRoute: typeof authVerifyMobileImport
       parentRoute: typeof rootRoute
     }
-    '/posts/$postId': {
-      preLoaderRoute: typeof PostsPostIdImport
+    '/(protected)/notifications': {
+      preLoaderRoute: typeof protectedNotificationsImport
       parentRoute: typeof rootRoute
     }
-    '/posts/register': {
-      preLoaderRoute: typeof PostsRegisterImport
+    '/(protected)/search': {
+      preLoaderRoute: typeof protectedSearchImport
       parentRoute: typeof rootRoute
     }
-    '/posts/': {
-      preLoaderRoute: typeof PostsIndexImport
+    '/(protected)/settings': {
+      preLoaderRoute: typeof protectedSettingsImport
+      parentRoute: typeof rootRoute
+    }
+    '/(protected)/': {
+      preLoaderRoute: typeof protectedIndexImport
+      parentRoute: typeof rootRoute
+    }
+    '/(protected)/posts/$postId': {
+      preLoaderRoute: typeof protectedPostsPostIdImport
+      parentRoute: typeof rootRoute
+    }
+    '/(protected)/posts/register': {
+      preLoaderRoute: typeof protectedPostsRegisterImport
+      parentRoute: typeof rootRoute
+    }
+    '/(protected)/posts/': {
+      preLoaderRoute: typeof protectedPostsIndexImport
       parentRoute: typeof rootRoute
     }
   }
@@ -114,15 +114,15 @@ declare module '@tanstack/react-router' {
 // Create and export the route tree
 
 export const routeTree = rootRoute.addChildren([
-  IndexRoute,
-  NotificationsRoute,
-  SearchRoute,
-  SettingsRoute,
   authLoginRoute,
-  authSendMobileCodeRoute,
-  PostsPostIdRoute,
-  PostsRegisterRoute,
-  PostsIndexRoute,
+  authVerifyMobileRoute,
+  protectedNotificationsRoute,
+  protectedSearchRoute,
+  protectedSettingsRoute,
+  protectedIndexRoute,
+  protectedPostsPostIdRoute,
+  protectedPostsRegisterRoute,
+  protectedPostsIndexRoute,
 ])
 
 /* prettier-ignore-end */

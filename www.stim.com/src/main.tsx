@@ -1,12 +1,11 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import "./plugins/tailwind/globals.css"
+import "@/plugins/tailwind/globals.css"
 
 import { auth } from "@/utils/auth"
 import { router } from "@/plugins/tanstack-router/router"
 import { RouterProvider } from "@tanstack/react-router"
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
-
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 
 function App() {
