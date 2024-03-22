@@ -73,4 +73,7 @@
   body {
     @apply bg-background text-foreground;
   }
+  #root {
+    height: 100vh; /* flex 자식 요소로서 높이를 100%로 설정 */
+  }
 }
